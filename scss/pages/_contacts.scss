@@ -1,2 +1,95 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
+
+.contacts {
+  position: relative;
+  height: 70vh;
+  &__text {
+    padding: 3rem 0;
+    text-align: center;
+    h3 {
+      font-family: $font--secondary;
+    }
+  }
+  &__img {
+    position: absolute;
+    img {
+      height: 50rem;
+      width: 70rem;
+    }
+  }
+}
+.information {
+  padding-bottom: 5rem;
+  &__title {
+    padding-top: 12rem;
+    padding-bottom: 3rem;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3rem;
+      input {
+        width: 100%;
+        padding: 1rem;
+        background-color: $clr--light;
+        border: 1px solid $clr--dark;
+        margin-bottom: 2rem;
+      }
+      textarea {
+        width: 100%;
+        padding: 1rem;
+        background-color: $clr--light;
+        height: 10rem;
+        border: 1px solid $clr--dark;
+        margin-bottom: 2rem;
+      }
+      input::placeholder {
+        font-family: $font--primary;
+        color: $clr--light;
+      }
+      input:focus,
+      input:enabled {
+        color: $clr--light;
+      }
+      textarea::placeholder {
+        color: $clr--light;
+      }
+      textarea:focus,
+      textarea:enabled {
+        color: $clr--light;
+      }
+    }
+    
+  }
+  &__wrapper--right {
+    padding: 3rem;
+     height: fit-content;
+    
+      h1 {
+        font-size: 36px;
+        padding-bottom: 2rem;
+        font-family: $font--secondary;
+        color: $clr--light;
+      }
+      h2{
+        font-size: 28px;
+        color: $clr--secondary;
+        padding-bottom: 0.5rem;
+      }
+      span{
+        color: $clr--light;
+        padding-right: 1rem;
+        margin-bottom: 3rem;
+        
+      }
+      .details{
+        width: 16rem;
+        margin-bottom: 2rem;
+      }
+    }
+}

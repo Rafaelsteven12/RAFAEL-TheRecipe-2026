@@ -1,23 +1,18 @@
 @use "../abstract/" as *;
-.footer{
-    padding: 2rem 0;
-    color: $clr--light;
-    &__wrapper{
-        @include between;
-        @include mediaQuery(520px){
-            flex-direction: column;
-            
-        }
+.footer {
+  padding: 4rem 0;
+  color: $clr--dark;
+  &__wrapper {
+    text-align: center;
+    span {
+      margin: 0 0.5rem;
     }
-    &__social{
-        display: flex;
-        gap: 2rem;
-        li a{
-            color: $clr--light;
-        }
-        @include mediaQuery(520px){
-            margin-top: 0.5rem;
-            gap: 1rem;
-        }
+    p{
+        padding-top: 0.2rem;
+        font-size: 18px;
     }
+    @include mediaQuery(520px) {
+      flex-direction: column;
+    }
+  }
 }

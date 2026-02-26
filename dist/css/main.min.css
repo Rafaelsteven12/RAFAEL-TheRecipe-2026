@@ -1458,7 +1458,7 @@ img {
 
 .card {
   width: 100%;
-  background-color: #696f77;
+  background-color: #ffffff;
   color: #ffffff;
 }
 .card img {
@@ -1564,30 +1564,22 @@ img {
 }
 
 .footer {
-  padding: 2rem 0;
-  color: #ffffff;
+  padding: 4rem 0;
+  color: #696f77;
 }
 .footer__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
+}
+.footer__wrapper span {
+  margin: 0 0.5rem;
+}
+.footer__wrapper p {
+  padding-top: 0.2rem;
+  font-size: 18px;
 }
 @media screen and (max-width: 520px) {
   .footer__wrapper {
     flex-direction: column;
-  }
-}
-.footer__social {
-  display: flex;
-  gap: 2rem;
-}
-.footer__social li a {
-  color: #ffffff;
-}
-@media screen and (max-width: 520px) {
-  .footer__social {
-    margin-top: 0.5rem;
-    gap: 1rem;
   }
 }
 
@@ -1676,6 +1668,178 @@ img {
   }
 }
 
+.about {
+  position: relative;
+  height: 60vh;
+}
+.about__text {
+  padding: 3rem 0;
+  text-align: center;
+}
+.about__text h3 {
+  font-family: "Playfair Display", serif;
+}
+.about__img {
+  position: absolute;
+}
+.about__img img {
+  height: 50rem;
+  width: 70rem;
+}
+
+.aboutBanner {
+  padding-top: 18rem;
+  padding-bottom: 5rem;
+}
+.aboutBanner__wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+}
+.aboutBanner__wrapper h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+}
+.aboutBanner__wrapper h6 {
+  margin: 2rem 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+.aboutBanner__wrapper h5 {
+  font-weight: normal;
+}
+.aboutBanner__wrapper h4 {
+  font-family: "Playfair Display", serif;
+  color: #d9964a;
+  font-size: 30px;
+  margin-bottom: 3rem;
+}
+.aboutBanner__cards {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+.aboutBanner__cards img {
+  width: 6rem;
+  height: 8rem;
+  margin-right: 1rem;
+}
+.aboutBanner__cards small {
+  font-size: 14px;
+  letter-spacing: 0.5rem;
+  color: #d9964a;
+}
+.aboutBanner__cards h3 {
+  font-size: 18px;
+  font-family: "Playfair Display", serif;
+}
+.aboutBanner__cards i {
+  color: #d9964a;
+  font-size: 18px;
+  padding: 0.5rem 0;
+}
+.aboutBanner__cards p {
+  font-size: 16px;
+}
+
+.contacts {
+  position: relative;
+  height: 70vh;
+}
+.contacts__text {
+  padding: 3rem 0;
+  text-align: center;
+}
+.contacts__text h3 {
+  font-family: "Playfair Display", serif;
+}
+.contacts__img {
+  position: absolute;
+}
+.contacts__img img {
+  height: 50rem;
+  width: 70rem;
+}
+
+.information {
+  padding-bottom: 5rem;
+}
+.information__title {
+  padding-top: 12rem;
+  padding-bottom: 3rem;
+}
+.information__wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+}
+.information__wrapper form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.information__wrapper form input {
+  width: 100%;
+  padding: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #696f77;
+  margin-bottom: 2rem;
+}
+.information__wrapper form textarea {
+  width: 100%;
+  padding: 1rem;
+  background-color: #ffffff;
+  height: 10rem;
+  border: 1px solid #696f77;
+  margin-bottom: 2rem;
+}
+.information__wrapper form input::-moz-placeholder {
+  font-family: "Mulish", sans-serif;
+  color: #ffffff;
+}
+.information__wrapper form input::placeholder {
+  font-family: "Mulish", sans-serif;
+  color: #ffffff;
+}
+.information__wrapper form input:focus,
+.information__wrapper form input:enabled {
+  color: #ffffff;
+}
+.information__wrapper form textarea::-moz-placeholder {
+  color: #ffffff;
+}
+.information__wrapper form textarea::placeholder {
+  color: #ffffff;
+}
+.information__wrapper form textarea:focus,
+.information__wrapper form textarea:enabled {
+  color: #ffffff;
+}
+.information__wrapper--right {
+  padding: 3rem;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.information__wrapper--right h1 {
+  font-size: 36px;
+  padding-bottom: 2rem;
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+}
+.information__wrapper--right h2 {
+  font-size: 28px;
+  color: #f9e9d7;
+  padding-bottom: 0.5rem;
+}
+.information__wrapper--right span {
+  color: #ffffff;
+  padding-right: 1rem;
+  margin-bottom: 3rem;
+}
+.information__wrapper--right .details {
+  width: 16rem;
+  margin-bottom: 2rem;
+}
+
 .homeBanner {
   background-color: #f9e9d7;
   padding: 4rem 0;
@@ -1708,6 +1872,410 @@ img {
   position: relative;
   width: 110rem;
   right: -10rem;
+}
+
+.recipeWeek__title {
+  position: relative;
+}
+.recipeWeek__title h3 {
+  color: #d9964a;
+  font-family: "Playfair Display", serif;
+  margin: 3rem 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recipeWeek__title::after {
+  position: absolute;
+  display: inline-block;
+  content: " ";
+  background-color: #d9964a;
+  width: 25rem;
+  height: 2px;
+  top: 1.5rem;
+  z-index: 9;
+  margin-left: 45rem;
+}
+.recipeWeek__title::before {
+  position: absolute;
+  display: inline-block;
+  content: " ";
+  background-color: #d9964a;
+  width: 25rem;
+  height: 2px;
+  bottom: 1.5rem;
+  z-index: 9;
+}
+.recipeWeek__cards--wrapper {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+.recipeWeek__cards--wrapper .card img {
+  height: 20rem;
+}
+.recipeWeek__cards--wrapper .card small {
+  color: #d9964a;
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+  letter-spacing: 1rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+}
+.recipeWeek__cards--wrapper .card h4 {
+  font-family: "Playfair Display", serif;
+  color: #696f77;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+}
+.recipeWeek__cards--wrapper .card p {
+  color: #696f77;
+  font-size: 14px;
+}
+
+.recipeCollection__title {
+  position: relative;
+}
+.recipeCollection__title h3 {
+  color: #d9964a;
+  font-family: "Playfair Display", serif;
+  margin: 3rem 0;
+  display: flex;
+}
+.recipeCollection__title::after {
+  position: absolute;
+  display: inline-block;
+  content: " ";
+  background-color: #d9964a;
+  width: 52rem;
+  height: 2px;
+  top: 1.5rem;
+  z-index: 9;
+  margin-left: 18rem;
+}
+.recipeCollection__cards {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+.recipeCollection__cards .cards__text {
+  width: 33.5rem;
+}
+.recipeCollection__cards img {
+  width: 46rem;
+  position: relative;
+}
+.recipeCollection__cards small {
+  color: #d9964a;
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+  letter-spacing: 1rem;
+  font-size: 14px;
+}
+.recipeCollection__cards h3 {
+  font-family: "Playfair Display", serif;
+  padding: 2rem 0;
+  font-size: 30px;
+}
+.recipeCollection__cards p {
+  padding-bottom: 2rem;
+  font-size: 16px;
+}
+
+.newsletter {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3)), url(../../images/bell_pepper.jpeg);
+  background-size: cover;
+  opacity: 50;
+  padding: 10rem 0;
+}
+.newsletter__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newsletter__wrapper h1 {
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 2rem;
+}
+.newsletter__wrapper p {
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+.newsletter {
+  /* Form container */
+}
+.newsletter .subscribe-form {
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 8px;
+  overflow: hidden; /* Makes button & input share rounded edges */
+}
+.newsletter .subscribe-form input {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.9);
+}
+.newsletter .subscribe-form button {
+  padding: 0 30px;
+  border: none;
+  background: #d8923c; /* Orange color */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.classic__title {
+  position: relative;
+  margin: 3rem 0;
+}
+.classic__title h3 {
+  color: #d9964a;
+  font-family: "Playfair Display", serif;
+}
+.classic__title::after {
+  position: absolute;
+  display: inline-block;
+  content: " ";
+  background-color: #d9964a;
+  width: 52rem;
+  height: 2px;
+  top: 1.5rem;
+  z-index: 9;
+  margin-left: 18rem;
+}
+.classic__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.classic__cards {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.classic__cards img {
+  width: 6rem;
+  height: 8rem;
+  margin-right: 1rem;
+}
+.classic__cards small {
+  font-size: 14px;
+  letter-spacing: 0.5rem;
+  color: #d9964a;
+}
+.classic__cards h3 {
+  font-size: 18px;
+  font-family: "Playfair Display", serif;
+}
+.classic__cards i {
+  color: #d9964a;
+  font-size: 18px;
+  padding: 0.5rem 0;
+}
+.classic__cards p {
+  font-size: 16px;
+}
+
+.readMore {
+  position: relative;
+  height: 65vh;
+}
+.readMore__banner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+}
+.readMore__details {
+  padding-top: 4rem;
+}
+.readMore__details h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  width: 33rem;
+}
+.readMore__details .part1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-end;
+  border-bottom: 1px solid #696f77;
+  padding-bottom: 2rem;
+}
+.readMore__details .part1--right {
+  display: flex;
+  flex-direction: row;
+}
+.readMore__details .part1--right h6 {
+  font-size: 1.25rem;
+}
+.readMore__details .part2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #696f77;
+  padding: 2rem 0;
+  display: flex;
+  margin-bottom: 3rem;
+}
+.readMore__details .part2 h6 {
+  font-size: 1.25rem;
+}
+.readMore__details .part2 .part2--a {
+  display: flex;
+}
+.readMore__details .part2 .part2--b {
+  display: flex;
+}
+.readMore__details .part2 .part2--c {
+  display: flex;
+}
+.readMore .banner__ingredients {
+  padding: 3rem;
+  background-color: #d9964a;
+  color: #ffffff;
+}
+.readMore .banner__ingredients h3 {
+  padding-bottom: 1.5rem;
+}
+.readMore .banner__ingredients p {
+  color: #f9e9d7;
+  font-size: 13.5px;
+  padding-bottom: 1rem;
+}
+.readMore__banner {
+  position: absolute;
+  width: 70rem;
+}
+
+.directions__title {
+  position: relative;
+  padding-top: 8rem;
+}
+.directions__title h3 {
+  color: #d9964a;
+  font-family: "Playfair Display", serif;
+  margin: 3rem 0;
+  display: flex;
+}
+.directions__title::after {
+  margin-top: 10rem;
+  position: absolute;
+  display: inline-block;
+  content: " ";
+  background-color: #d9964a;
+  width: 58rem;
+  height: 2px;
+  top: 2.5rem;
+  z-index: 9;
+  margin-left: 12rem;
+}
+.directions__wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+}
+.directions .steps__wrapper {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #696f77;
+  margin-bottom: 1.5rem;
+}
+.directions .steps__wrapper h5 {
+  padding-bottom: 1.5rem;
+}
+.directions .steps__wrapper p {
+  font-size: 16px;
+  font-weight: 1;
+  padding-bottom: 1.5rem;
+}
+.directions .steps__nextprev {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.directions .steps__nextprev a {
+  color: #696f77;
+  font-weight: 600;
+}
+.directions .steps__nextprev {
+  margin-bottom: 5rem;
+}
+.directions .youtube {
+  padding-bottom: 5rem;
+}
+.directions .youtube h3 {
+  font-family: "Playfair Display", serif;
+  color: #d9964a;
+  font-size: 36px;
+  margin-bottom: 2rem;
+}
+.directions .youtube iframe {
+  width: 35rem;
+  height: 20rem;
+}
+.directions .label {
+  margin-right: 10px;
+  color: #555;
+}
+.directions .category,
+.directions .tags {
+  margin-bottom: 12px;
+  width: 23rem;
+}
+.directions .tag {
+  display: inline-block;
+  background-color: lightgray;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  color: #333;
+}
+.directions h4 {
+  font-size: 40px;
+  color: #d9964a;
+  font-family: "Playfair Display", serif;
+  padding-bottom: 3rem;
+}
+.directions__cards {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+.directions__cards img {
+  width: 6rem;
+  height: 8rem;
+  margin-right: 1rem;
+}
+.directions__cards small {
+  font-size: 14px;
+  letter-spacing: 0.5rem;
+  color: #d9964a;
+}
+.directions__cards h3 {
+  font-size: 18px;
+  font-family: "Playfair Display", serif;
+}
+.directions__cards i {
+  color: #d9964a;
+  font-size: 18px;
+  padding: 0.5rem 0;
+}
+.directions__cards p {
+  font-size: 16px;
 }
 
 .tns-outer {

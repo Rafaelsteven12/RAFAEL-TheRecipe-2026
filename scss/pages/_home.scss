@@ -1,40 +1,261 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
 
-.homeBanner{
-    background-color: $clr--secondary;
-    padding: 4rem 0;
-    &__wrapper{
-        display: flex;
+.homeBanner {
+  background-color: $clr--secondary;
+  padding: 4rem 0;
+  &__wrapper {
+    display: flex;
+  }
+  &__text {
+    display: flex;
+    gap: 1.5rem;
+    color: $clr--primary;
+    width: 20rem;
+    h4 {
+      font-weight: 5;
+      font-size: 18px;
+      word-spacing: 0.5rem;
+      margin-top: 5rem;
+      margin-bottom: 2rem;
     }
-    &__text{
-        display: flex;
-        gap: 1.5rem;
-        color: $clr--primary;
-        width: 20rem;
-        h4{
-        font-weight: 5;
-        font-size: 18px;
-        word-spacing: .5rem;
-        margin-top:  5rem;
-        margin-bottom: 2rem;
-        }
+  }
+  &__details {
+    h3 {
+      font-family: $font--secondary;
+      width: 25rem;
+      padding-bottom: 2rem;
+    }
+    p {
+      padding-bottom: 2rem;
+    }
+  }
+  &__img {
+    position: relative;
+    width: 110rem;
+    right: -10rem;
+  }
+}
 
+.recipeWeek {
+  &__title {
+    position: relative;
+    h3 {
+      color: $clr--primary;
+      font-family: $font--secondary;
+      margin: 3rem 0;
+      text-align: center;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    &__details{
-        h3{
-           font-family: $font--secondary; 
-           width: 25rem;
-           padding-bottom: 2rem;
-        }
-        p{
-            padding-bottom: 2rem;
-        }
+  }
+
+  &__title::after {
+    position: absolute;
+    display: inline-block;
+    content: " ";
+    background-color: $clr--primary;
+    width: 25rem;
+    height: 2px;
+    top: 1.5rem;
+    z-index: 9;
+    margin-left: 45rem;
+  }
+  &__title::before {
+    position: absolute;
+    display: inline-block;
+    content: " ";
+    background-color: $clr--primary;
+    width: 25rem;
+    height: 2px;
+    bottom: 1.5rem;
+    z-index: 9;
+  }
+  &__cards--wrapper {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    .card {
+      img {
+        height: 20rem;
+      }
+      small {
+        color: $clr--primary;
+        font-family: $font--primary;
+        font-weight: normal;
+        letter-spacing: 1rem;
+        margin: 1rem 0;
+        @include centerAll;
+        font-size: 12px;
+      }
+      h4 {
+        font-family: $font--secondary;
+        color: $clr--dark;
+        padding-bottom: 1rem;
+        @include centerAll;
+        font-size: 18px;
+      }
+      p {
+        color: $clr--dark;
+        font-size: 14px;
+      }
     }
-    &__img{
-            position: relative;
-            width: 110rem;
-            right: -10rem;
-        
+  }
+}
+
+.recipeCollection {
+  &__title {
+    position: relative;
+    h3 {
+      color: $clr--primary;
+      font-family: $font--secondary;
+      margin: 3rem 0;
+
+      display: flex;
     }
+  }
+  &__title::after {
+    position: absolute;
+    display: inline-block;
+    content: " ";
+    background-color: $clr--primary;
+    width: 52rem;
+    height: 2px;
+    top: 1.5rem;
+    z-index: 9;
+    margin-left: 18rem;
+  }
+  &__cards {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    .cards__text {
+      width: 33.5rem;
+    }
+    img {
+      width: 46rem;
+      position: relative;
+    }
+    small {
+      color: $clr--primary;
+      font-family: $font--primary;
+      font-weight: normal;
+      letter-spacing: 1rem;
+      font-size: 14px;
+    }
+    h3 {
+      font-family: $font--secondary;
+      padding: 2rem 0;
+      font-size: 30px;
+    }
+    p {
+      padding-bottom: 2rem;
+      font-size: 16px;
+    }
+  }
+}
+
+.newsletter {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.3)),
+    url(../../images/bell_pepper.jpeg);
+  background-size: cover;
+  opacity: 50;
+  padding: 10rem 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      color: $clr--light;
+      font-family: $font--secondary;
+      margin-bottom: 2rem;
+    }
+    p {
+      color: $clr--light;
+      margin-bottom: 2rem;
+    }
+  }
+  /* Form container */
+  .subscribe-form {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 8px;
+    overflow: hidden; /* Makes button & input share rounded edges */
+  }
+  .subscribe-form input {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  .subscribe-form button {
+    padding: 0 30px;
+    border: none;
+    background: #d8923c; /* Orange color */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+}
+
+.classic {
+  &__title {
+    position: relative;
+    margin: 3rem 0;
+    h3 {
+      color: $clr--primary;
+      font-family: $font--secondary;
+    }
+
+    &::after {
+      position: absolute;
+      display: inline-block;
+      content: " ";
+      background-color: $clr--primary;
+      width: 52rem;
+      height: 2px;
+      top: 1.5rem;
+      z-index: 9;
+      margin-left: 18rem;
+    }
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  &__cards {
+    display: flex;
+    margin-bottom: 1.5rem;
+    img {
+      width: 6rem;
+      height: 8rem;
+      margin-right: 1rem;
+    }
+    small {
+      font-size: 14px;
+      letter-spacing: 0.5rem;
+      color: $clr--primary;
+    }
+    h3 {
+      font-size: 18px;
+      font-family: $font--secondary;
+    }
+    i {
+      color: $clr--primary;
+      font-size: 18px;
+      padding: 0.5rem 0;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
 }

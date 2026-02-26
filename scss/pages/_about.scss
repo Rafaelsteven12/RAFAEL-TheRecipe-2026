@@ -1,2 +1,75 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
+
+.about {
+  position: relative;
+  height: 60vh;
+  &__text {
+    padding: 3rem 0;
+    text-align: center;
+    h3 {
+      font-family: $font--secondary;
+    }
+  }
+  &__img {
+    position: absolute;
+    img {
+      height: 50rem;
+      width: 70rem;
+    }
+  }
+}
+
+.aboutBanner {
+  padding-top: 18rem;
+  padding-bottom: 5rem;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    h3 {
+      font-family: $font--secondary;
+      font-size: 56px;
+    }
+    h6 {
+      margin: 2rem 0;
+      font-size: 18px;
+      font-weight: normal;
+    }
+    h5 {
+      font-weight: normal;
+    }
+    h4 {
+      font-family: $font--secondary;
+      color: $clr--primary;
+      font-size: 30px;
+      margin-bottom: 3rem;
+    }
+  }
+  &__cards {
+    display: flex;
+    margin-bottom: 0.5rem;;
+    img {
+      width: 6rem;
+      height: 8rem;
+      margin-right: 1rem;
+    }
+    small {
+      font-size: 14px;
+      letter-spacing: 0.5rem;
+      color: $clr--primary;
+    }
+    h3 {
+      font-size: 18px;
+      font-family: $font--secondary;
+    }
+    i {
+      color: $clr--primary;
+      font-size: 18px;
+      padding: 0.5rem 0;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
